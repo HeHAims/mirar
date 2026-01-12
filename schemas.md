@@ -44,6 +44,7 @@ Notes:
 - `temporal_relationship` is optional; Phase 1 allows at most one relationship per node.
 - `strength` expresses perceived influence, not certainty.
 - Relationships are human-authored, not inferred.
+- See docs/vocabulary.md for temporal relationship types and meaning.
 - Language stays human-authored and interpretive by design.
 
 ## AlmaframeNode (example JSON)

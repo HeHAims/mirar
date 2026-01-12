@@ -6,7 +6,7 @@
 | id | UUID | Unique identifier |
 | timestamp | DateTime | When the node occurred |
 | duration | Float | Seconds |
-| feeling_label | String | e.g., "longing", "awe", "friction" |
+| emotion_label | String | e.g., "longing", "awe", "friction" |
 | intensity | Float | 0.0 to 1.0 |
 | confidence | Float | Trust in this data |
 | trigger | String | What initiated it |
@@ -18,7 +18,19 @@
 | previous | List[QuantumFeelingNode] | Links backward |
 | next | List[QuantumFeelingNode] | Links forward |
 | parallel | List[QuantumFeelingNode] | Synchronous or similar moments |
+| temporal_relationship | Object (optional) | Human-authored; see docs/vocabulary.md |
 | archetype_link | String | e.g., "Hero's Journey" |
+
+### temporal_relationship (optional)
+| Field | Type | Notes |
+| --- | --- | --- |
+| type | String | precedes, follows, parallels, triggers (see docs/vocabulary.md) |
+| target_node_id | UUID | The related node |
+| strength | Float | 0.0 to 1.0; perceived influence, not certainty |
+
+Notes:
+- Phase 1 allows at most one temporal relationship per node.
+- Relationships are optional and human-authored.
 
 ## ResonancePattern
 | Field | Type | Notes |
