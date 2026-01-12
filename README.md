@@ -1,5 +1,7 @@
 # MIRAR
 
+MIRAR is a reflective intelligence framework for capturing and mapping inner experiences, feelings, and patterns over time.
+
 Project MIRAR tracks, interprets, and evolves patterns of internal resonance across time, space, and context.
 It is not built on machine logic, but on human intuition, reflection, and narrative structure, supported by sensors and a growing emotional language.
 
